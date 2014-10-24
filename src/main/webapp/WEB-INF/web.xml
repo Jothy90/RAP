@@ -27,6 +27,14 @@
         </init-param>
     </servlet>-->
 
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            /WEB-INF/mvc-dispatcher-servlet.xml
+            /resources/spring-security.xml
+        </param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>mvc-dispatcher</servlet-name>
         <servlet-class>
@@ -50,13 +58,7 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>
-            /resources/mvc-dispatcher-servlet.xml
-            /resources/spring-security.xml
-        </param-value>
-    </context-param>
+
 
     <listener>
         <listener-class>
