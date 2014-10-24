@@ -1,3 +1,4 @@
+/*
 package org.ygc.rap.hibernate;
 
 import org.hibernate.HibernateException;
@@ -11,9 +12,11 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import java.util.Map;
 
+*/
 /**
  * Created by john on 10/23/14.
- */
+ *//*
+
 public class Main {
     private static final SessionFactory ourSessionFactory;
     private static final ServiceRegistry serviceRegistry;
@@ -53,3 +56,4 @@ public class Main {
         }
     }
 }
+*/

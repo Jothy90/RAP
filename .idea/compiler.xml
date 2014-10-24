@@ -25,6 +25,9 @@
         <module name="RAP" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RAP" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
