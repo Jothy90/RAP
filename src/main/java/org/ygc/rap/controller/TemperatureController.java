@@ -18,7 +18,7 @@ public class TemperatureController {
 
     @RequestMapping(value = "/temperatureHome", method = RequestMethod.GET)
     public String temperatureHome(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
-        return "temperatureHome";
+        return "temHumHome";
     }
 
     }
