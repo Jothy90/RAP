@@ -49,7 +49,8 @@ public class LoginUserDeatalis implements UserDetailsService {
 
             @Override
             public String getUsername() {
-                return username;
+                return "John";
+                //return username;
             }
 
             @Override

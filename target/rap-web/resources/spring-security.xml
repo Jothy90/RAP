@@ -21,13 +21,11 @@
     <http authentication-manager-ref="auth"
           access-decision-manager-ref="accessDecisionManager">
 
-        <intercept-url pattern="/gardenHome**" access="Admin"/>
-        <intercept-url pattern="/goToAddDevice**" access="Admin"/>
-        <intercept-url pattern="/addDevice**" access="Admin"/>
+        <intercept-url pattern="/temperatureHome**" access="Admin"/>
 
         <form-login login-page="/login" authentication-failure-url="/login?error"
-                    username-parameter="gardenName" password-parameter="password"
-                    default-target-url="/gardenHome"/>
+                    username-parameter="userName" password-parameter="password"
+                    default-target-url="/temperatureHome"/>
         <logout invalidate-session="true" logout-success-url="/login?logout"/>
 
         <access-denied-handler error-page="/403"/>

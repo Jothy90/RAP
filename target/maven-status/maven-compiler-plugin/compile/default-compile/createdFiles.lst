@@ -1,3 +1,6 @@
 org/ygc/rap/Security/LoginUserDeatalis.class
-org/ygc/rap/controller/BaseController.class
+org/ygc/rap/controller/LoginController.class
 org/ygc/rap/Security/LoginUserDeatalis$1.class
+org/ygc/rap/repo/object/User.class
+org/ygc/rap/controller/BaseController.class
+org/ygc/rap/controller/TemperatureController.class

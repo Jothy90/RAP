@@ -124,7 +124,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 "style="margin-top:3%">
                             <input type="text" name="pin" class="form-control input-lg col-sm-4"
                                    placeholder="Enter Pin Code">
                         </div>
