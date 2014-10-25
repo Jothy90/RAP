@@ -19,10 +19,18 @@
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap/bootstrap-clockpicker.css">
     <link rel="stylesheet" type="text/css" href="resources/css/toggle-switch.css">
     <%--<link rel="stylesheet" type="text/css" href="resources/css/dia.css">--%>
+    !--Core CSS -->
+
+    <link href="resources/css/other/bootstrap-reset.css" rel="stylesheet">
+    <link href="resources/css/other/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="resources/css/other/style.css" rel="stylesheet">
+    <link href="resources/css/other/style-responsive.css" rel="stylesheet" />
 
 
 
-    <%--Google pie chart for weather meter--%>
+<%--Google pie chart for weather meter--%>
     <script type='text/javascript' src='https://www.google.com/jsapi'></script>
     <script type='text/javascript'>
         google.load('visualization', '1', {packages: ['gauge']});
@@ -69,7 +77,21 @@
 
     <style type='text/css'>
         /* Example 1 custom styles */
+        .slider.slider-horizontal {
+            width: 500px;
+            height: 20px;
+        }
+        .tooltip {
+            margin-left: -14px;
+        }
+       /* .slider-track {
+            width: 250%;
+        }*/
         .well {
+            min-height: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 550px;
             background-color: #E0E0E0;
         }
 
@@ -164,8 +186,7 @@
         <div class="thumbnail col-sm-5 col-sm-offset-1">
 
             <div class="row">
-                <div class="lead col-sm-8 col-sm-offset-3">Readings</div>
-                <div class="col-sm-1 btn btn-default"><span class="glyphicon glyphicon-refresh ">  </span></div>
+                <div class="lead col-sm-8 col-sm-offset-3">Sensor Readings</div>
             </div>
 
             <div class="col-sm-6" id='temp_meter'></div>
@@ -175,12 +196,59 @@
 
         </div>
     </div>
+    <div class="row">
+        <div class="thumbnail col-sm-6">
+            <div class="col-sm-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Real Time Chart
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-cog"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                    </header>
+                    <div class="panel-body">
+                        <div id="reatltime-chart">
+                            <div id="reatltime-chartContainer" style="width:100%;height:300px; text-align: center; margin:0 auto;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="thumbnail col-sm-5 col-sm-offset-1">
+
+        </div>
+    </div>
+
 </div>
 <script type="text/javascript" src="resources/js/bootstrap/jquery-1.11.js"></script>
 <script type="text/javascript" src="resources/js/bootstrap/bootstrap.min.js"></script>
 <script  type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>
 <script  type="text/javascript" src="resources/js/bootstrap/bootstrap-slider.min.js"></script>
 <script type="text/javascript" src="resources/js/bootstrap/bootstrap-clockpicker.min.js"></script>
+
+
+<!--Core js-->
+
+
+<script class="include" type="text/javascript" src="resources/js/other/jquery.dcjqaccordion.2.7.js"></script>
+<script src="resources/js/other/jquery.scrollTo.min.js"></script>
+<script src="resources/js/other/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="resources/js/other/jquery.nicescroll.js"></script>
+
+<!-- jQuery Flot Chart-->
+<script src="resources/js/flot-chart/jquery.flot.js"></script>
+<script src="resources/js/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="resources/js/flot-chart/jquery.flot.resize.js"></script>
+<script src="resources/js/flot-chart/jquery.flot.pie.resize.js"></script>
+<script src="resources/js/flot-chart/jquery.flot.selection.js"></script>
+<script src="resources/js/flot-chart/jquery.flot.stack.js"></script>
+<script src="resources/js/flot-chart/jquery.flot.time.js"></script>
+<script src="resources/js/flot.chart.init.js"></script>
+<!-- Common script init for all pages-->
+<script src="resources/js/other/scripts.js"></script>
 
 <script  type="text/javascript">
     $(document).ready(function() {
