@@ -120,8 +120,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome to <c:out
-                            value="${sessionScope.name}"/> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Johnnirajh<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="${contextPath}/j_spring_security_logout">Sign Out</a></li>
                         <li class="divider"></li>
@@ -151,9 +150,27 @@
         <div class="thumbnail col-sm-6">
 
             <div class="row">
-                <div class="lead col-sm-8 col-sm-offset-3">Device Limits</div>
-
+                <div class="lead col-sm-8 col-sm-offset-3">
+                    <div class="row">
+                        <div class="lead col-sm-11 col-sm-offset-1"> Temperature Readings</div>
+                    </div>
+                </div>
             </div>
+
+            <div class="row">
+
+                <div class="col-sm-4 col-sm-offset-1">
+                    <br/> <br/> <br/>
+                    <div  id='temp_meter'></div>
+                </div>
+
+
+                <div class="thumbnail col-sm-6">
+                    <img src="resources/images/img4.png">
+                </div>
+            </div>
+
+            <div class="lead col-sm-6" style="margin-left: 20px;">Temperature Range</div>
             <div class="well">
                 <input id="sltl" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
 
@@ -164,6 +181,36 @@
             </div>
             <br/>
 
+
+
+        </div>
+
+        <div class="thumbnail col-sm-6">
+
+            <div class="row">
+                <div class="lead col-sm-8 col-sm-offset-3">
+                    <div class="row">
+
+                        <div class="lead col-sm-11 col-sm-offset-1">  Humidity Readings</div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-4 col-sm-offset-1">
+                    <br/> <br/> <br/>
+                    <div  id='hum_meter'></div>
+                </div>
+
+
+                <div class="thumbnail col-sm-6">
+                    <img src="resources/images/img4.png">
+                </div>
+            </div>
+
+            <div class="lead col-sm-6" style="margin-left: 20px;">Humidity Range</div>
+
             <div class="well">
                 <input id="slhl" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
 
@@ -172,27 +219,16 @@
                 <input id="slhh" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
 
             </div>
-
-        </div>
-
-        <div class="thumbnail col-sm-5 col-sm-offset-1">
-
-            <div class="row">
-                <div class="lead col-sm-8 col-sm-offset-3">Sensor Readings</div>
-            </div>
-
-            <div class="col-sm-6" id='temp_meter'></div>
-            <div class="col-sm-6" id='hum_meter'></div>
-            <div class="lead col-sm-6" style="margin-left: 20px;">Temperature</div>
-            <div class="lead col-sm-5 "> Humidity Level</div>
+            <br/>
 
         </div>
     </div>
     <div class="row">
+        <br/><br/><br/>
         <div class="thumbnail col-sm-6">
             <img src="resources/images/img4.png">
         </div>
-        <div class="thumbnail col-sm-5 col-sm-offset-1">
+        <div class="thumbnail col-sm-6 ">
             <img src="resources/images/img4.png">
         </div>
     </div>
