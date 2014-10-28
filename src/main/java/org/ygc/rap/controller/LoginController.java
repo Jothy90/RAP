@@ -16,7 +16,7 @@ import java.io.IOException;
  */
 @Controller
 @RequestMapping("/")
-//Maps the request after host:port/dia/
+//Maps the request after host:port/rap/
 public class LoginController {
     @RequestMapping(value = "/registerMe", method = RequestMethod.POST)
     public void doLogin(ModelMap model,HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -31,7 +31,9 @@ public class LoginController {
 
             request.setAttribute("userName",user.getName());
             request.setAttribute("password",user.getPassword());
-            response.sendRedirect("/rap/j_spring_security_check");
+            response.sendRedirect("/rap-web/j_spring_security_check");
+        }else{
+            response.sendRedirect("/rap-web/j_spring_security_logout?mask");
         }
 
         //DataLayer.addNewGarden(gn);

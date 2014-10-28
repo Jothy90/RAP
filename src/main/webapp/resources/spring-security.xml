@@ -22,6 +22,7 @@
           access-decision-manager-ref="accessDecisionManager">
 
         <intercept-url pattern="/temperatureHome**" access="Admin"/>
+        <intercept-url pattern="/registerMe**" access="Admin"/>
 
         <form-login login-page="/login" authentication-failure-url="/login?error"
                     username-parameter="userName" password-parameter="password"

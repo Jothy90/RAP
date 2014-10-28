@@ -17,6 +17,15 @@
     <script src="resources/js/html5shiv.js"></script>
     <script src="resources/js/respond.min-1.4.2.js"></script>
     <![endif]-->
+<script type="text/javascript">
+
+    function validatePass() {
+        if (document.signUpForm.passwords.value == document.signUpForm.passwordRe.value) {
+            return true;
+        }
+        return false;
+    }
+</script>
 </head>
 
 <body style="margin-top:60px">
@@ -131,20 +140,20 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 " style="margin-top:3%">
-                            <input type="password" name="password" class="form-control input-lg col-sm-4"
-                                   placeholder="Give it a password">
+                            <input type="password" name="passwords" class="form-control input-lg col-sm-4"
+                                   placeholder="Give it a passwords">
                         </div>
                         <div class="col-sm-12 " style="margin-top:3%">
                             <input type="password" name="passwordRe" class="form-control input-lg col-sm-4"
                                    placeholder="Re-enter password">
                         </div>
                         <div class="col-sm-8 col-sm-offset-2">
-                            <a href="gardenhome.html">
+
                                 <button style="margin:5%" type="submit" onclick="return validatePass()"
                                         class="btn btn-lg btn-success col-sm-12">
                                     Create New User
                                 </button>
-                            </a>
+
                         </div>
                     </div>
                 </form>

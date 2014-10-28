@@ -1,4 +1,5 @@
 package org.ygc.rap.object;
+
 import javax.persistence.*;
 
 /**

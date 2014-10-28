@@ -97,7 +97,7 @@
 
 <body style="margin-top:60px" onload="load()">
 
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 
 <!-- Fixed navbar -->
 <div id="dic_bubble" class="selection_bubble fontSize13 noSelect"
@@ -122,7 +122,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Johnnirajh<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="${contextPath}/j_spring_security_logout">Sign Out</a></li>
+                        <li><a href="j_spring_security_logout">Sign Out</a></li>
                         <li class="divider"></li>
                         <li><a href="#">About RAP</a></li>
                     </ul>
