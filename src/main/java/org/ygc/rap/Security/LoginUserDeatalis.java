@@ -5,6 +5,8 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.ygc.rap.object.User;
+import org.ygc.rap.repo.UserDB;
 /*import org.yarlithub.dia.repo.DataLayer;
 import org.yarlithub.dia.repo.object.Garden;*/
 
@@ -17,10 +19,10 @@ public class LoginUserDeatalis implements UserDetailsService {
     public UserDetails loadUserByUsername(final String username)
             throws UsernameNotFoundException {
 
-        /*final Garden gn=DataLayer.getGardenByName(username);
-        if (gn==null) {
+        final User user= UserDB.getUserByName(username);
+        if (user==null) {
             throw new UsernameNotFoundException(username + " not found");
-        }*/
+        }
 
         //creating dummy user details, should do JDBC operations
         return new UserDetails() {
@@ -49,13 +51,12 @@ public class LoginUserDeatalis implements UserDetailsService {
 
             @Override
             public String getUsername() {
-                return "John";
-                //return username;
+                return username;
             }
 
             @Override
             public String getPassword() {
-                return "John";
+                return user.getPassword();
             }
 
             //To DO for authentication.

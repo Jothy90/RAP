@@ -126,7 +126,7 @@
 
             <div class="col-sm-5 col-sm-offset-1">
 
-                <form method="post" action="registerMe" name="signUpForm">
+                <form method="post" action="registerMe" name="signUpForm" accept-charset="utf-8">
                     <div class="row">
                         <div class="col-sm-12">
                             <input type="text" name="userName" class="form-control input-lg col-sm-4"
@@ -142,7 +142,7 @@
                     <div class="row">
                         <div class="col-sm-12 " style="margin-top:3%">
                             <input type="password" name="passwords" class="form-control input-lg col-sm-4"
-                                   placeholder="Give it a passwords">
+                                   placeholder="Give it a password">
                         </div>
                         <div class="col-sm-12 " style="margin-top:3%">
                             <input type="password" name="passwordRe" class="form-control input-lg col-sm-4"
@@ -150,10 +150,10 @@
                         </div>
                         <div class="col-sm-8 col-sm-offset-2">
 
-                                <button style="margin:5%" type="submit" onclick="return validatePass()"
-                                        class="btn btn-lg btn-success col-sm-12">
-                                    Create New User
-                                </button>
+                            <button type="submit" style="margin:5%" onclick="return validatePass()"
+                                    class="btn btn-lg btn-success col-sm-12">
+                                Create New User
+                            </button>
 
                         </div>
                     </div>

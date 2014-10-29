@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>RAP login</title>
 
     <!-- Bootstrap -->
@@ -77,7 +78,7 @@
                     <c:if test="${not empty msg}">
                         <div class="msg">${msg}</div>
                     </c:if>
-                    <form method="post" action="<c:url value='/j_spring_security_check' />">
+                    <form name="SignInForm" method="post" action="<c:url value='/j_spring_security_check' />">
                         <div class="col-sm-5" style="padding: 0">
                             <input type="text" name="userName" class="form-control" placeholder="User name">
                         </div>
@@ -125,7 +126,7 @@
 
             <div class="col-sm-5 col-sm-offset-1">
 
-                <form method="post" action="registerMe" name="signUpForm">
+                <form method="post" action="registerMe" name="signUpForm" accept-charset="utf-8">
                     <div class="row">
                         <div class="col-sm-12">
                             <input type="text" name="userName" class="form-control input-lg col-sm-4"
@@ -141,7 +142,7 @@
                     <div class="row">
                         <div class="col-sm-12 " style="margin-top:3%">
                             <input type="password" name="passwords" class="form-control input-lg col-sm-4"
-                                   placeholder="Give it a passwords">
+                                   placeholder="Give it a password">
                         </div>
                         <div class="col-sm-12 " style="margin-top:3%">
                             <input type="password" name="passwordRe" class="form-control input-lg col-sm-4"
@@ -149,10 +150,10 @@
                         </div>
                         <div class="col-sm-8 col-sm-offset-2">
 
-                                <button style="margin:5%" type="submit" onclick="return validatePass()"
-                                        class="btn btn-lg btn-success col-sm-12">
-                                    Create New User
-                                </button>
+                            <button type="submit" style="margin:5%" onclick="return validatePass()"
+                                    class="btn btn-lg btn-success col-sm-12">
+                                Create New User
+                            </button>
 
                         </div>
                     </div>

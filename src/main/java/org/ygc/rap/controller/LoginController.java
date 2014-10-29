@@ -19,14 +19,14 @@ import java.io.IOException;
 //Maps the request after host:port/rap/
 public class LoginController {
     @RequestMapping(value = "/registerMe", method = RequestMethod.POST)
-    public void doLogin(ModelMap model,HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void register(ModelMap model,HttpServletRequest request, HttpServletResponse response) throws IOException {
         int id=UserDB.getUserIdByMask(request.getParameter("pin"));
 
         if(id>0){
             User user=new User();
             user.setId(id);
             user.setName(request.getParameter("userName"));
-            user.setPassword(request.getParameter("password"));
+            user.setPassword(request.getParameter("passwords"));
             UserDB.update(user);
 
             request.setAttribute("userName",user.getName());

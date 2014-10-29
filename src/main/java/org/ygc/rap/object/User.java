@@ -12,7 +12,7 @@ public class User {
 
     @Id @GeneratedValue
     @Column(name = "id")
-    private int id;
+    private Integer id;
 
     @Column(name = "name")
     private String name;
@@ -21,22 +21,22 @@ public class User {
     private String password;
 
     @Column(name = "type")
-    private  int type;
+    private  Integer type;
 
     @Column(name = "low")
-    private int low;
+    private Integer low;
 
     @Column(name = "high")
-    private int high;
+    private Integer high;
 
     @Column(name = "mask")
     private String mask;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -56,27 +56,27 @@ public class User {
         this.password = password;
     }
 
-    public int getType() {
+    public Integer getType() {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(Integer type) {
         this.type = type;
     }
 
-    public int getLow() {
+    public Integer getLow() {
         return low;
     }
 
-    public void setLow(int low) {
+    public void setLow(Integer low) {
         this.low = low;
     }
 
-    public int getHigh() {
+    public Integer getHigh() {
         return high;
     }
 
-    public void setHigh(int high) {
+    public void setHigh(Integer high) {
         this.high = high;
     }
 
