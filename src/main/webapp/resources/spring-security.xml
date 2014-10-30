@@ -40,7 +40,7 @@
     </authentication-manager>
 
     <beans:bean id="userDetailsService"
-                class="org.ygc.rap.Security.LoginUserDeatalis"/>
+                class="org.ygc.rap.security.LoginUserDeatalis"/>
 
 
 </beans:beans>
