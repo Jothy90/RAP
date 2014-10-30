@@ -13,12 +13,14 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 @RequestMapping("/")
-//Maps the request after host:port/dia/
+//Maps the request after host:port/rap/
 public class TemperatureController {
 
     @RequestMapping(value = "/temperatureHome", method = RequestMethod.GET)
     public String temperatureHome(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+
+
         return "temHumHome";
     }
 
-    }
+}

@@ -21,12 +21,13 @@
     <http authentication-manager-ref="auth"
           access-decision-manager-ref="accessDecisionManager">
 
-        <intercept-url pattern="/temperatureHome**" access="Admin"/>
+        <intercept-url pattern="/deviceHome**" access="Admin"/>
         <intercept-url pattern="/registerMe**" access="Admin"/>
+        <intercept-url pattern="/temperatureHome**" access="Admin"/>
 
         <form-login login-page="/login" authentication-failure-url="/login?error"
                     username-parameter="userName" password-parameter="password"
-                    default-target-url="/temperatureHome"/>
+                    default-target-url="/userHome"/>
         <logout invalidate-session="true" logout-success-url="/login?logout"/>
 
         <access-denied-handler error-page="/403"/>
@@ -40,7 +41,7 @@
     </authentication-manager>
 
     <beans:bean id="userDetailsService"
-                class="org.ygc.rap.security.LoginUserDeatalis"/>
+                class="org.ygc.rap.security.LoginUserDetails"/>
 
 
 </beans:beans>

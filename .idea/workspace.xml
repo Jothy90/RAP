@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="010cfa13-390d-4271-bbbe-45c35b17555c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/sdp.app.api-1.0.11-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/util/Property.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/sms/RapSmsUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/sms/SmsHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/sms/SmsRequestProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/ygc/rap/Security/LoginUserDeatalis.java" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/security/LoginUserDeatalis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAP.iml" afterPath="$PROJECT_DIR$/RAP.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/object/Device.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/DeviceController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/DeviceDataLayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/userHome.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/UserController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/UserDB.java" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/UserDataLayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/ygc/rap/security/LoginUserDeatalis.java" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/security/LoginUserDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/ygc/rap/hibernate/Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/hibernate/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/TemperatureController.java" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/TemperatureController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/ygc/rap/object/User.java" afterPath="$PROJECT_DIR$/src/main/java/org/ygc/rap/object/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/spring-security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/resources/spring-security.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -94,10 +95,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="36" selection-start="777" selection-end="777" vertical-scroll-proportion="0.45527157" vertical-offset="0" max-vertical-offset="2190">
+            <state line="36" column="39" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="1290">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceDataLayer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/DeviceDataLayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="32" selection-start="2507" selection-end="2507" vertical-scroll-proportion="0.0" vertical-offset="1036" max-vertical-offset="1530">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginUserDetails.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/security/LoginUserDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="30" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="960">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/object/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="28" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDataLayer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/UserDataLayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="26" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.33676094" vertical-offset="319" max-vertical-offset="1230">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemperatureController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/TemperatureController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="11" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userHome.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/userHome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-6.9583335" vertical-offset="193" max-vertical-offset="1680">
               <folding />
             </state>
           </provider>
@@ -126,24 +185,31 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/tempratureHome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/TempratureController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/temperatureHome.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/TemperatureController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/object/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/spring-security.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/temHumHome.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/rap.js" />
         <option value="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/Security/LoginUserDeatalis.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/hibernate/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/object/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/UserDB.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/util/Property.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/sms/SmsRequestProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/sms/RapSmsUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/sms/SmsHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/TemperatureController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/userHome.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/DeviceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/security/LoginUserDetalis.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/spring-security.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/object/Device.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/DeviceDataLayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/object/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/UserDataLayer.java" />
       </list>
     </option>
   </component>
@@ -250,6 +316,84 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -274,6 +418,156 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="object" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -846,12 +1140,12 @@
       <workItem from="1414501758014" duration="15867000" />
       <workItem from="1414561126608" duration="14091000" />
       <workItem from="1414592772711" duration="16874000" />
-      <workItem from="1414647425577" duration="8357000" />
+      <workItem from="1414647425577" duration="27259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111084000" />
+    <option name="totallyTimeSpent" value="129986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -943,41 +1237,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="15" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/spring-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="36" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="405">
@@ -1094,13 +1353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/TemperatureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="42" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="435">
@@ -1142,23 +1394,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.4160584" vertical-offset="159" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/hibernate/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="43" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/object/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0955414" vertical-offset="255" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
@@ -1177,48 +1415,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="92" selection-start="5647" selection-end="5647" vertical-scroll-proportion="0.3312102" vertical-offset="1816" max-vertical-offset="2715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/UserDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="39" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.39452055" vertical-offset="681" max-vertical-offset="1770">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/security/LoginUserDeatalis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="689" selection-end="689" vertical-scroll-proportion="0.49315068" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/spring-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="61" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.4047619" vertical-offset="167" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/sms/SmsRequestProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.6523179" vertical-offset="161" max-vertical-offset="825">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1227,7 +1428,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="25" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.36102235" vertical-offset="329" max-vertical-offset="1110">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1239,25 +1440,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/util/Property.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="32" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.34185302" vertical-offset="131" max-vertical-offset="780">
+        <state line="19" column="49" selection-start="496" selection-end="496" vertical-scroll-proportion="0.45527157" vertical-offset="0" max-vertical-offset="626">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="26" selection-start="6295" selection-end="6295" vertical-scroll-proportion="-11.833333" vertical-offset="1816" max-vertical-offset="2715">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/util/Property.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="49" selection-start="496" selection-end="496" vertical-scroll-proportion="0.45527157" vertical-offset="0" max-vertical-offset="626">
+        <state line="30" column="17" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.71884984" vertical-offset="0" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="52" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.47349823" vertical-offset="167" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/userHome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-6.9583335" vertical-offset="193" max-vertical-offset="1680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.69922876" vertical-offset="58" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/TemperatureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/DeviceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="33" selection-start="688" selection-end="688" vertical-scroll-proportion="0.8097686" vertical-offset="0" max-vertical-offset="555">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="777" selection-end="777" vertical-scroll-proportion="0.45527157" vertical-offset="0" max-vertical-offset="2190">
+        <state line="19" column="22" selection-start="947" selection-end="947" vertical-scroll-proportion="0.73264784" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/object/Device.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="28" selection-start="396" selection-end="396" vertical-scroll-proportion="0.46015424" vertical-offset="196" max-vertical-offset="1500">
+          <folding>
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-4.2.2.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.20604396" vertical-offset="0" max-vertical-offset="3210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/DeviceDataLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="32" selection-start="2507" selection-end="2507" vertical-scroll-proportion="0.0" vertical-offset="1036" max-vertical-offset="1530">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/security/LoginUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="30" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="39" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="1290">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/object/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ygc/rap/repo/UserDataLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="26" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.33676094" vertical-offset="319" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>

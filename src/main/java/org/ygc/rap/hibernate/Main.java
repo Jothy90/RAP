@@ -9,7 +9,7 @@ import org.hibernate.metadata.ClassMetadata;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 import org.ygc.rap.object.User;
-import org.ygc.rap.repo.UserDB;
+import org.ygc.rap.repo.UserDataLayer;
 
 import java.util.Map;
 
@@ -41,7 +41,7 @@ public class Main {
         final Session session = getSession();
         String John="John";
         String s="FROM User as u where u.name='"+John+"'";
-        System.out.println(UserDB.getUserIdByMask("11111"));
+        System.out.println(UserDataLayer.getUserIdByMask("11111"));
         User user=(User)session.createQuery(s).uniqueResult();
         System.out.println(user.getMask());
         try {
