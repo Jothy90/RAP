@@ -39,11 +39,7 @@ public class Main {
 
     public static void main(final String[] args) throws Exception {
         final Session session = getSession();
-        String John="John";
-        String s="FROM User as u where u.name='"+John+"'";
-        System.out.println(UserDataLayer.getUserIdByMask("11111"));
-        User user=(User)session.createQuery(s).uniqueResult();
-        System.out.println(user.getMask());
+
         try {
             System.out.println("querying all the managed entities...");
             final Map metadataMap = session.getSessionFactory().getAllClassMetadata();

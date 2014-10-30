@@ -10,11 +10,11 @@ import javax.persistence.*;
 @Table(name = "user")
 public class User {
 
-
+    @Id @GeneratedValue
     @Column(name = "id")
     private Integer id;
 
-    @Id @GeneratedValue
+
     @Column(name = "name")
     private String name;
 

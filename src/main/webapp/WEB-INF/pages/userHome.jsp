@@ -46,7 +46,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome to <c:out
                             value="${sessionScope.userName}"/> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="${contextPath}/j_spring_security_logout">Sign Out</a></li>
+                        <li><a href="j_spring_security_logout">Sign Out</a></li>
                         <li class="divider"></li>
                         <li><a href="#">About DIA</a></li>
                     </ul>
@@ -85,7 +85,7 @@
                 <tbody>
                 <c:forEach items="${devices}" var="device">
                     <tr>
-                        <th><a href="${contextPath}/deviceHome?name=<c:out value='${device.name}'/>&deviceType=<c:out value='${device.type}'/>"><c:out
+                        <th><a href="${contextPath}/deviceHome?name=<c:out value='${device.name}'/>&type=<c:out value='${device.type}'/>"><c:out
                                 value="${device.name}"/></a></th>
                         <th><c:out value="${device.type}"/></th>
                     </tr>

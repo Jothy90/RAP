@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name = "device")
 public class Device {
 
-
+    @Id @GeneratedValue
     @Column(name = "id")
     private Integer id;
 
@@ -17,11 +17,19 @@ public class Device {
     private String name;
 
     @Column(name = "user_id")
-    private int userId;
-
+    private Integer userId;
 
     @Column(name = "type")
     private  Integer type;
+
+    @Column(name = "low")
+    private Integer low;
+
+    @Column(name = "high")
+    private Integer high;
+
+    @Column(name = "mask")
+    private String mask;
 
     public Integer getId() {
         return id;
@@ -39,11 +47,11 @@ public class Device {
         this.name = name;
     }
 
-    public int getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
@@ -79,16 +87,6 @@ public class Device {
         this.mask = mask;
     }
 
-    @Column(name = "low")
 
-    private Integer low;
-
-    @Column(name = "high")
-    private Integer high;
-
-    @Id
-    @GeneratedValue
-    @Column(name = "mask")
-    private String mask;
 
 }

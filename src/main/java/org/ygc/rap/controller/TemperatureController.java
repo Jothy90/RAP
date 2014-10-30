@@ -20,7 +20,7 @@ public class TemperatureController {
     public String temperatureHome(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
 
 
-        return "temHumHome";
+        return "temperaturePage";
     }
 
 }

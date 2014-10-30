@@ -90,7 +90,24 @@ public class DeviceDataLayer {
         }
         return id;
     }
+    public static boolean addUserId(int deviceId,int userId ){
 
+        Session session = factory.openSession();
+        Transaction tx = null;
+        try{
+            tx = session.beginTransaction();
+            Device device =(Device)session.get(Device.class,deviceId);
+            device.setUserId(userId);
+            session.update(device);
+            tx.commit();
+        }catch (HibernateException e) {
+            if (tx!=null) tx.rollback();
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return true;
+    }
 
 
 }

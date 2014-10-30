@@ -2,9 +2,7 @@ package org.ygc.rap.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -33,11 +31,11 @@ public class BaseController {
 
     }
 
-//    @RequestMapping(value = "/{name}", method = RequestMethod.GET)
-//    public String welcomeName(@PathVariable String name, ModelMap model) {
-//
-//        model.addAttribute("message", "DIA Web Project + Spring 3 MVC - you are now at page: " + name);
-//        return "index";
-//
-//    }
+    @RequestMapping(value = "/{name}", method = RequestMethod.GET)
+    public String welcomeName(@PathVariable String name, ModelMap model) {
+
+        model.addAttribute("message", "RAP Web Project + Spring 3 MVC - you are now at page: " + name);
+        return "index";
+
+    }
 }

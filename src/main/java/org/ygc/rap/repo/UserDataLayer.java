@@ -63,8 +63,25 @@ public class UserDataLayer {
         }
         return  user;
     }
+    public static int add(User user){
 
-    public static boolean update(User user){
+        Session session = factory.openSession();
+        Transaction tx = null;
+        int userId=-99;
+        try{
+            tx = session.beginTransaction();
+            userId =(Integer)session.save(user);
+            tx.commit();
+        }catch (HibernateException e) {
+            if (tx!=null) tx.rollback();
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return userId;
+    }
+
+    public static boolean addUserId(User user){
 
         Session session = factory.openSession();
         Transaction tx = null;
@@ -86,4 +103,5 @@ public class UserDataLayer {
         }
         return true;
     }
+
 }

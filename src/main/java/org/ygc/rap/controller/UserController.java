@@ -34,7 +34,8 @@ public class UserController {
             User user=new User();
             user.setName(request.getParameter("userName"));
             user.setPassword(request.getParameter("passwords"));
-            UserDataLayer.update(user);
+            DeviceDataLayer.addUserId(id,UserDataLayer.add(user));
+
 
             request.setAttribute("userName",user.getName());
             request.setAttribute("password",user.getPassword());
@@ -60,7 +61,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/userHome", method = RequestMethod.GET)
-    public String goToHome(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+    public String toUserHome(ModelMap model, HttpServletRequest request) {
 
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
