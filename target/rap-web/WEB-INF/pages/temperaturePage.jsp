@@ -30,7 +30,7 @@
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
                 ['Label', 'Value'],
-                ['\'C',<c:out value="80"/>]
+                ['\'C',<c:out value="${device.temperature}"/>]
 
             ]);
 
@@ -48,7 +48,7 @@
             chart.draw(data, options);
             var data1 = google.visualization.arrayToDataTable([
                 ['Label', 'Value'],
-                ['%',<c:out value="60"/>]
+                ['%',<c:out value="${device.humidity}"/>]
 
             ]);
 
@@ -172,11 +172,11 @@
 
             <div class="lead col-sm-6" style="margin-left: 20px;">Temperature Range</div>
             <div class="well">
-                <input id="sltl" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
+                <input id="sltl" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="<c:out value="${device.lowTemp}"/>"/>
 
             </div>
             <div class="well">
-                <input id="slth" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
+                <input id="slth" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="<c:out value="${device.highTemp}"/>"/>
 
             </div>
             <br/>
@@ -212,11 +212,11 @@
             <div class="lead col-sm-6" style="margin-left: 20px;">Humidity Range</div>
 
             <div class="well">
-                <input id="slhl" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
+                <input id="slhl" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="<c:out value="${device.lowHum}"/>"/>
 
             </div>
             <div class="well">
-                <input id="slhh" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
+                <input id="slhh" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="<c:out value="${device.highHum}"/>"/>
 
             </div>
             <br/>

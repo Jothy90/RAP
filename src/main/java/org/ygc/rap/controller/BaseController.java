@@ -31,10 +31,10 @@ public class BaseController {
 
     }
 
-    @RequestMapping(value = "/{name}", method = RequestMethod.GET)
-    public String welcomeName(@PathVariable String name, ModelMap model) {
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String welcomeName(ModelMap model) {
 
-        model.addAttribute("message", "RAP Web Project + Spring 3 MVC - you are now at page: " + name);
+        model.addAttribute("message", "RAP Web Project + Spring 3 MVC - you are now at page: test");
         return "index";
 
     }

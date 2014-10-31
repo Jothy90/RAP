@@ -85,7 +85,7 @@
                 <tbody>
                 <c:forEach items="${devices}" var="device">
                     <tr>
-                        <th><a href="${contextPath}/deviceHome?name=<c:out value='${device.name}'/>&type=<c:out value='${device.type}'/>"><c:out
+                        <th><a href="${contextPath}/deviceHome?id=<c:out value='${device.id}'/>&type=<c:out value='${device.type}'/>"><c:out
                                 value="${device.name}"/></a></th>
                         <th><c:out value="${device.type}"/></th>
                     </tr>

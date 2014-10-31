@@ -1,7 +1,8 @@
+org/ygc/rap/ussd/Messages.class
 org/ygc/rap/sms/RapSmsUtil.class
 org/ygc/rap/sms/SmsRequestProcessor.class
-org/ygc/rap/hibernate/Main.class
 org/ygc/rap/repo/UserDataLayer.class
+org/ygc/rap/hibernate/Main.class
 org/ygc/rap/controller/DeviceController.class
 org/ygc/rap/controller/BaseController.class
 org/ygc/rap/security/LoginUserDetails$1.class
@@ -9,7 +10,10 @@ org/ygc/rap/object/User.class
 org/ygc/rap/controller/UserController.class
 org/ygc/rap/sms/SmsHandler.class
 org/ygc/rap/util/Property.class
+org/ygc/rap/util/RapCommonUtil.class
+org/ygc/rap/object/DeviceAccess.class
 org/ygc/rap/security/LoginUserDetails.class
 org/ygc/rap/repo/DeviceDataLayer.class
-org/ygc/rap/object/Device.class
+org/ygc/rap/repo/DeviceAccessDataLayer.class
 org/ygc/rap/controller/TemperatureController.class
+org/ygc/rap/object/Device.class

@@ -1,5 +1,7 @@
 package org.ygc.rap.object;
 
+import org.ygc.rap.util.RapCommonUtil;
+
 import javax.persistence.*;
 
 /**
@@ -22,18 +24,31 @@ public class Device {
     @Column(name = "type")
     private  Integer type;
 
-    @Column(name = "low")
-    private Integer low;
+    @Column(name = "low_temp")
+    private Integer lowTemp;
 
-    @Column(name = "high")
-    private Integer high;
+    @Column(name = "high_temp")
+    private Integer highTemp;
+
+    @Column(name = "temperature")
+    private Integer temperature;
+
+    @Column(name = "low_hum")
+    private Integer lowHum;
+
+    @Column(name = "high_hum")
+    private Integer highHum;
+
+    @Column(name = "humidity")
+    private Integer humidity;
 
     @Column(name = "mask")
     private String mask;
 
 
     public void setSensorData(String sensorData){
-
+        temperature= RapCommonUtil.temperatureValue(sensorData);
+        humidity= RapCommonUtil.humidityValue(sensorData);
     }
 
     public Integer getId() {
@@ -68,20 +83,52 @@ public class Device {
         this.type = type;
     }
 
-    public Integer getLow() {
-        return low;
+    public Integer getLowTemp() {
+        return lowTemp;
     }
 
-    public void setLow(Integer low) {
-        this.low = low;
+    public void setLowTemp(Integer lowTemp) {
+        this.lowTemp = lowTemp;
     }
 
-    public Integer getHigh() {
-        return high;
+    public Integer getHighTemp() {
+        return highTemp;
     }
 
-    public void setHigh(Integer high) {
-        this.high = high;
+    public void setHighTemp(Integer highTemp) {
+        this.highTemp = highTemp;
+    }
+
+    public Integer getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(Integer temperature) {
+        this.temperature = temperature;
+    }
+
+    public Integer getLowHum() {
+        return lowHum;
+    }
+
+    public void setLowHum(Integer lowHum) {
+        this.lowHum = lowHum;
+    }
+
+    public Integer getHighHum() {
+        return highHum;
+    }
+
+    public void setHighHum(Integer highHum) {
+        this.highHum = highHum;
+    }
+
+    public Integer getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(Integer humidity) {
+        this.humidity = humidity;
     }
 
     public String getMask() {
@@ -91,7 +138,5 @@ public class Device {
     public void setMask(String mask) {
         this.mask = mask;
     }
-
-
 
 }

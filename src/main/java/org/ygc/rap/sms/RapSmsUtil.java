@@ -116,7 +116,7 @@ public class RapSmsUtil {
         return mtSmsReq;
     }
 
-  /*  public static MtSmsResp sendCommand(SmsRequestSender smsMtSender, MtSmsReq mtSmsReq) {
+    public static MtSmsResp sendCommand(SmsRequestSender smsMtSender, MtSmsReq mtSmsReq) {
         MtSmsResp mtSmsResp = null;
         List<String> addressList = mtSmsReq.getDestinationAddresses();
         try {
@@ -131,5 +131,5 @@ public class RapSmsUtil {
             LOGGER.log(Level.INFO, "Unexpected error occurred while sending SMS", e);
         }
         return mtSmsResp;
-    }*/
+    }
 }

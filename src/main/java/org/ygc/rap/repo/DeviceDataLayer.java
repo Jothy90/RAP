@@ -58,12 +58,27 @@ public class DeviceDataLayer {
                 oldDevice.setName(device.getName());
             }
 
-            if(device.getLow()!=null){
-                oldDevice.setLow(device.getLow());
+            if(device.getLowTemp()!=null){
+                oldDevice.setLowTemp(device.getLowTemp());
             }
 
-            if(device.getHigh()!=null){
-                oldDevice.setHigh(device.getHigh());
+            if(device.getHighTemp()!=null){
+                oldDevice.setHighTemp(device.getHighTemp());
+            }
+
+            if(device.getTemperature()!=null){
+                oldDevice.setTemperature(device.getTemperature());
+            }
+
+            if(device.getLowHum()!=null){
+                oldDevice.setLowHum(device.getLowHum());
+            }
+
+            if(device.getHighHum()!=null){
+                oldDevice.setHighHum(device.getHighHum());
+            }
+            if(device.getHumidity()!=null){
+                oldDevice.setHumidity(device.getHumidity());
             }
 
             session.update(oldDevice);

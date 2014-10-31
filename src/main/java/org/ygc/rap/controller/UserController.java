@@ -26,6 +26,7 @@ import java.util.List;
 //Maps the request after host:port/rap/
 public class UserController {
     HttpSession session;
+
     @RequestMapping(value = "/registerMe", method = RequestMethod.POST)
     public void register(ModelMap model,HttpServletRequest request, HttpServletResponse response) throws IOException {
         int id= DeviceDataLayer.getDeviceIdByMask(request.getParameter("pin"));
@@ -74,8 +75,5 @@ public class UserController {
         List<Device> devices = DeviceDataLayer.getDevicesByUserId(user.getId());
         model.addAttribute("devices", devices);
         return "userHome";
-
     }
-
-
 }

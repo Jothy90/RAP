@@ -23,8 +23,7 @@ public class DeviceController {
 
         switch(type){
             case 1:
-                request.setAttribute("userName",request.getParameter("name"));
-                response.sendRedirect("/rap-web/temperatureHome");
+                response.sendRedirect("/rap-web/temperatureHome?id="+request.getParameter("id"));
                 break;
         }
     }
