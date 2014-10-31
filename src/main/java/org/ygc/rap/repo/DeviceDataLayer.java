@@ -90,6 +90,33 @@ public class DeviceDataLayer {
         }
         return id;
     }
+
+    public static Device getDeviceById(int id){
+        Device device=null;
+        Session session = factory.openSession();
+
+        try{
+            device=(Device)session.get(Device.class,id);
+        }catch (HibernateException e) {
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return device;
+    }
+    public static Device getDeviceByMask(String mask){
+        Device device=null;
+        Session session = factory.openSession();
+
+        try{
+            device=(Device)session.createQuery("FROM Device as d where d.mask="+mask).uniqueResult();
+        }catch (HibernateException e) {
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return device;
+    }
     public static boolean addUserId(int deviceId,int userId ){
 
         Session session = factory.openSession();

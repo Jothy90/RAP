@@ -31,6 +31,11 @@ public class Device {
     @Column(name = "mask")
     private String mask;
 
+
+    public void setSensorData(String sensorData){
+
+    }
+
     public Integer getId() {
         return id;
     }
