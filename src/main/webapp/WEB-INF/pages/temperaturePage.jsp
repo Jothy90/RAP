@@ -24,6 +24,41 @@
 
     <%--Google pie chart for weather meter--%>
     <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+
+    <script type='text/javascript'>
+
+        function reloadPage(){
+            location.reload();
+        }
+
+        function request(){
+            var url,xhr;
+            url="requestForData?id=<c:out value="${device.id}"/>";
+
+            xhr = new XMLHttpRequest();
+            xhr.open('GET',url, true);
+            xhr.send();
+            xhr.onreadystatechange=function(){
+
+                if (xhr.readyState==4)
+                {
+                    //alert(xhr.responseText);
+                    var str = xhr.responseText;
+                    var res = str.split(" ");
+                    if(res[0].localeCompare('ERROR')==0){
+                        alert("Some thing went Wrong in Device plz Refresh page after some time");
+                    }else if(res[0].localeCompare('WORK')==0){
+                        alert("WORK");
+                        /*reloadPage();*/
+                    }
+                    else{
+                        alert("Some thing went Wrong");
+                    }
+                }
+            }
+        }
+
+    </script>
     <script type='text/javascript'>
         google.load('visualization', '1', {packages: ['gauge']});
         google.setOnLoadCallback(drawChart);
@@ -223,16 +258,7 @@
 
         </div>
     </div>
-    <div class="row">
-        <br/><br/><br/>
-        <div class="thumbnail col-sm-6">
-            <img src="resources/images/img4.png">
-        </div>
-        <div class="thumbnail col-sm-6 ">
-            <img src="resources/images/img4.png">
-        </div>
-    </div>
-
+    <input type="button" onclick="request()" name="request" value="request">
 </div>
 <script type="text/javascript" src="resources/js/bootstrap/jquery-1.11.js"></script>
 <script type="text/javascript" src="resources/js/bootstrap/bootstrap.min.js"></script>
